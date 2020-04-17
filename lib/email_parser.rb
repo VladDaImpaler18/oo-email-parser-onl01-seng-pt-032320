@@ -13,7 +13,7 @@ class EmailAddressParser
   
   def parse
     parsed = []
-    parsed << @emails_string.split(/\w*@\w+\.\w+/i)
+    parsed << @emails.split(/\w*@\w+\.\w+/i)
     parsed.flatten.uniq
   end
   
