@@ -13,8 +13,8 @@ class EmailAddressParser
   
   def parse
     parsed = []
-    parsed << @emails.scan(/\w*@\w+\.\w+/i)
-    parsed.flatten.uniq
+    parsed = @emails.scan(/\w*@\w+\.\w+/i)
+    parsed.uniq
   end
   
 end
